@@ -36,16 +36,48 @@ nav ul li a{
 nav ul li a:hover{
     color: burlywood;
 }
+section{
+    text-align: center;
+}
 .hero{
     text-align: center;
     margin: 50px;
 }
-section{
-    text-align: center;
+.home_hero{
+    background-color: black;
+    color: white;
+    float: left;
+    margin-top: 0;
+}
+.home_about{
+    margin: 10rem;
+    background-color:cornflowerblue;
+}
+.home_skills{
+    background-color: aqua;
+    float: left;
+    
+}
+.home_projects{
+    background-color: black;
+    color: white;
+}
+.projects li{
+    list-style: none;
+}
+.testimonials{
+    background-color: blue;
+    float: right;
+}
+.home_contact{
+    background-color: darkgray;
+    float: left;
 }
 aside{
     text-align: center;
+    background-color: darkorchid;
 }
 footer{
     text-align: center;
+    background-color: aqua;
 }
