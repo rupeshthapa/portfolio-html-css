@@ -53,20 +53,29 @@ nav ul li a:hover{
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     margin: 50px;
-    padding: 10px;
+    
 }
-.hero p, .hero h1{
-    text-align: center;
-    margin: 0;
+.welcome-text{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-#home_hero{
+.intro{
+    display: flex;
+    align-items: center;
+    
+}
+#home_img{
     border-radius: 20px;
+    filter: grayscale(100%);
+   
 }
-.home_about{
-    margin: 10rem;
-    background-color:cornflowerblue;
+#intro_text{
+    margin: 120px;
+    
 }
 .home_skills{
     background-color: aqua;
