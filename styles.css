@@ -3,6 +3,9 @@
     padding: auto;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+}
 body{
     background-color: rgb(0, 0, 0);
     color: #ffffff;
@@ -10,6 +13,7 @@ body{
 .container{
     width: 100%;
     margin: 0 auto;
+    flex: 1;
 }
 header{
     background-color: aliceblue;
@@ -77,31 +81,22 @@ nav ul li a:hover{
     margin: 120px;
     
 }
-.home_skills{
-    background-color: aqua;
-    float: left;
-    
+aside{
+    background-color: #222;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+   
 }
-.home_projects{
-    background-color: black;
-    color: white;
-}
-.projects li{
+aside ul {
     list-style: none;
 }
-.testimonials{
-    background-color: blue;
-    float: right;
-}
-.home_contact{
-    background-color: darkgray;
-    float: left;
-}
-aside{
-    text-align: center;
-    background-color: darkorchid;
+aside ul li{
+    margin-bottom: 10px;
 }
 footer{
     text-align: center;
-    background-color: aqua;
+    background-color: aliceblue;
+    color: black;
 }
