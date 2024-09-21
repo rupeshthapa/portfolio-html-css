@@ -15,6 +15,7 @@ body{
     margin: 0 auto;
     flex: 1;
 }
+/* For nav bar */
 header{
     background-color: aliceblue;
     height: 10vh;
@@ -32,9 +33,7 @@ h2{
 nav{
     text-align: center;
 }
-/* nav ul{
-    
-} */
+
 nav ul li{
     display: inline;
 }
@@ -54,6 +53,7 @@ nav ul li a:hover{
     padding: 10px;
     
 }
+/* For home page */
 .hero{
     display: flex;
     align-items: center;
@@ -81,6 +81,27 @@ nav ul li a:hover{
     margin: 120px;
     
 }
+/* For about page */
+.introduction h2{
+    color: white;
+}
+.background h2{
+    color: white;
+}
+.skills h2{
+    color: white;
+}
+.passion_motivation h2{
+    color: white;
+}
+.call_to_action h2{
+    color: white;
+}
+
+
+
+
+/* For aside */
 aside{
     background-color: #222;
     padding: 20px;
@@ -95,6 +116,7 @@ aside ul {
 aside ul li{
     margin-bottom: 10px;
 }
+/* For Footer */
 footer{
     text-align: center;
     background-color: aliceblue;
