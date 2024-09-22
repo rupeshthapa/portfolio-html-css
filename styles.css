@@ -97,6 +97,12 @@ nav ul li a:hover{
 .call_to_action h2{
     color: white;
 }
+.container_about section, p, hr{
+    margin: 20px;
+}
+
+
+
 
 
 
