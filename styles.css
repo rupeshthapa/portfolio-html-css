@@ -19,6 +19,9 @@ body{
 header{
     background-color: aliceblue;
     height: 10vh;
+    position: sticky;
+    z-index: 10;
+    top: 0;
     
 }
 .header-section{
@@ -99,6 +102,22 @@ nav ul li a:hover{
 }
 .container_about section, p, hr{
     margin: 20px;
+}
+
+/*For contact page */
+
+.hero_contact{
+    background-color: #222;
+    margin: 20px;
+    height: 30rem;
+    border-radius: 10px ;
+}
+.container_contact h2{
+    text-align: center;
+    color: white;
+}
+label, input, select, textarea, button{
+    margin: 10px;
 }
 
 
