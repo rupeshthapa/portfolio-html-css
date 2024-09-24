@@ -49,10 +49,10 @@ nav ul li a{
     transition: color 0.5s, background-color 0.5s, border-radius 0.5s, padding 0.5s ease-in-out;
     
 }
-nav ul li a:hover{
+nav ul li a:hover, nav ul li a:active{
     color: burlywood;
     background-color: black;
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 10px;
     
 }
@@ -85,6 +85,10 @@ nav ul li a:hover{
     
 }
 /* For about page */
+.introduction, .background, .skills, .passion_motivation, .call_to_action{
+    background-color: #222;
+    border-radius: 10px;
+}
 .introduction h2{
     color: white;
 }
@@ -111,13 +115,23 @@ nav ul li a:hover{
     margin: 20px;
     height: 30rem;
     border-radius: 10px ;
+    display: flex;
+    align-items: center;
+    justify-self: center;
 }
 .container_contact h2{
-    text-align: center;
     color: white;
 }
-label, input, select, textarea, button{
+
+#firstname, #lastname, #dropdown, #textarea{
+    width: 100%;
+    height: 30px;
     margin: 10px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

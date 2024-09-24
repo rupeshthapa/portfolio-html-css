@@ -15,7 +15,7 @@
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
             </div>
@@ -25,22 +25,22 @@
             <div class="container_contact">
                 <h2>Fill out the form to send queries.</h2>
                 <form>
-                    <label>First Name:</label><br>
-                    <input type="text" placeholder="Enter your first name"><br>
-                    <label>Last Name:</label><br>
-                    <input type="text" placeholder="Enter your last name"><br>
-                    <label>Gender</label><br>
-                    <input type="radio" name="gender"><label>Male</label><br>
-                    <input type="radio" name="gender"> <label>Female</label><br>
-                    <input type="radio" name="gender"> <label>Others</label><br>
-                    <label>Are you happy?</label><br>
-                    <select>
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" id="firstname" placeholder="Enter your first name"><br>
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" id="lastname" placeholder="Enter your last name"><br>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="male" name="gender"><label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender"> <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender"> <label for="others">Others</label><br>
+                    <label for="dropdown">Are you happy?</label><br>
+                    <select id="dropdown">
                         <option>....</option>
                         <option>Yes</option>
                         <option>No</option>
                         <option>Hard to tell</option>
                     </select><br>
-                    <textarea>Ask your questions here...</textarea><br>
+                    <textarea id="textarea">Ask your questions here...</textarea><br>
                     <input type="checkbox"><label>Terms and Conditions</label><br>
                     <button type="submit">Submit</button>
                 </form>
