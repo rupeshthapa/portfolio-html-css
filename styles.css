@@ -110,33 +110,85 @@ nav ul li a:hover, nav ul li a:active{
 
 /*For contact page */
 
-.hero_contact{
+.hero_contact {
     background-color: #222;
     margin: 20px;
-    height: 30rem;
-    border-radius: 10px ;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-self: center;
-}
-.container_contact h2{
-    color: white;
 }
 
-#firstname, #lastname, #dropdown, #textarea{
+.hero_contact h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form, fieldset {
     width: 100%;
-    height: 30px;
-    margin: 10px;
-}
-button{
+    max-width: 600px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
+label[for="firstname"], label[for="lastname"], 
+label[for="email"], label[for="phone"],
+label[for="birthdate"], label[for="time"],
+label[for="age"], label[for="website"],
+label[for="gender"], label[for="male"],
+label[for="female"], label[for="others"],
+label[for="dropdown"], label[for="feedback"]{
+    margin: 10px 0 5px;
+    /* color: #ffffff; */
+}
+label[for="checkbox"] {
+    margin: 10px 0 ;
+}
+input[type="text"], input[type="email"], 
+input[type="tel"], input[type="date"],
+input[type="time"], input[type="number"],
+input[type="url"], textarea, 
+select, input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    
+}
 
+textarea, select {
+    resize: none;
+    color: #000;
+}
+textarea{
+    height: 100px;
+}
 
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: -30px;
+}
 
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: burlywood;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: burlywood;
+}
 
 
 

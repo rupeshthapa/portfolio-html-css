@@ -23,26 +23,61 @@
         <main>
         <section class="hero_contact">
             <div class="container_contact">
-                <h2>Fill out the form to send queries.</h2>
+                
                 <form>
+                    <fieldset>
+                    <legend><h2>Fill out the form to send queries.</h2></legend>
                     <label for="firstname">First Name:</label><br>
-                    <input type="text" id="firstname" placeholder="Enter your first name"><br>
+                    <input type="text" id="firstname" placeholder="Enter your first name" required><br>
+                    
                     <label for="lastname">Last Name:</label><br>
-                    <input type="text" id="lastname" placeholder="Enter your last name"><br>
+                    <input type="text" id="lastname" placeholder="Enter your last name" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required><br>
+
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate"><br>
+
+                    <label for="time">Preferred Contact Time:</label>
+                    <input type="time" id="time" name="time"><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required><br>
+
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website">
+
+
+
+
+                    
                     <label for="gender">Gender</label><br>
-                    <input type="radio" id="male" name="gender"><label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender"> <label for="female">Female</label><br>
-                    <input type="radio" id="others" name="gender"> <label for="others">Others</label><br>
+                    <input type="radio" id="male" name="gender" required><label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" required> <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender" required> <label for="others">Others</label><br>
+                    
                     <label for="dropdown">Are you happy?</label><br>
-                    <select id="dropdown">
-                        <option>....</option>
-                        <option>Yes</option>
-                        <option>No</option>
-                        <option>Hard to tell</option>
-                    </select><br>
-                    <textarea id="textarea">Ask your questions here...</textarea><br>
-                    <input type="checkbox"><label>Terms and Conditions</label><br>
+                    <select id="dropdown" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="hard-to-tell">Hard to tell</option>
+                    </select>
+                    <br>
+                    <textarea id="textarea" placeholder="Ask your questions here..." required></textarea><br>
+                    
+                    <label for="feedback">Rate your experience:</label>
+                    <input type="range" id="feedback" name="feedback" min="0" max="10" value="7" step="1">
+
+                    <input type="checkbox" id="checkbox" name="terms" required><label for="checkbox">Terms and Conditions</label><br>
+                    
+                    
                     <button type="submit">Submit</button>
+                </fieldset>
                 </form>
             </div>
         </section>
