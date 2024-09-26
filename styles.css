@@ -1,3 +1,10 @@
+:root{
+    --color-background: rgb(0, 0, 0);
+    --color-text: #ffffff;
+    --color-accent: burlywood;
+    --color-header-footer: aliceblue;  
+    --color-secondary: #222;
+}
 *{
     margin: auto;
     padding: auto;
@@ -7,8 +14,8 @@ html, body{
     height: 100%;
 }
 body{
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 .container{
     width: 100%;
@@ -17,7 +24,7 @@ body{
 }
 /* For nav bar */
 header{
-    background-color: aliceblue;
+    background-color: var(--color-header-footer);
     height: 10vh;
     position: sticky;
     z-index: 10;
@@ -31,7 +38,7 @@ header{
 }
 h2{
     margin: 10px;
-    color: black;
+    color: var(--color-background);
 }
 nav{
     text-align: center;
@@ -43,15 +50,15 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     margin: 50px;
-    color: black;
+    color: var(--color-background);
     padding: 10px;
     border-radius: 10px;
     transition: color 0.5s, background-color 0.5s, border-radius 0.5s, padding 0.5s ease-in-out;
     
 }
-nav ul li a:hover, nav ul li a:active{
-    color: burlywood;
-    background-color: black;
+nav ul li a:hover{
+    color: var(--color-accent);
+    background-color: var(--color-background);
     border-radius: 10px;
     padding: 10px;
     
@@ -86,24 +93,17 @@ nav ul li a:hover, nav ul li a:active{
 }
 /* For about page */
 .introduction, .background, .skills, .passion_motivation, .call_to_action{
-    background-color: #222;
+    background-color: var(--color-secondary);
     border-radius: 10px;
 }
-.introduction h2{
-    color: white;
+.introduction h2,
+.background h2,
+.skills h2,
+.passion_motivation h2,
+.call_to_action h2 {
+    color: var(--color-text);
 }
-.background h2{
-    color: white;
-}
-.skills h2{
-    color: white;
-}
-.passion_motivation h2{
-    color: white;
-}
-.call_to_action h2{
-    color: white;
-}
+
 .container_about section, p, hr{
     margin: 20px;
 }
@@ -111,7 +111,7 @@ nav ul li a:hover, nav ul li a:active{
 /*For contact page */
 
 .hero_contact {
-    background-color: #222;
+    background-color: var(--color-secondary);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -121,7 +121,7 @@ nav ul li a:hover, nav ul li a:active{
 }
 
 .hero_contact h2 {
-    color: #fff;
+    color: var(--color-text);
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
@@ -142,7 +142,6 @@ label[for="gender"], label[for="male"],
 label[for="female"], label[for="others"],
 label[for="dropdown"], label[for="feedback"]{
     margin: 10px 0 5px;
-    /* color: #ffffff; */
 }
 label[for="checkbox"] {
     margin: 10px 0 ;
@@ -162,7 +161,7 @@ select, input[type="range"] {
 
 textarea, select {
     resize: none;
-    color: #000;
+    /* color: #000; */
 }
 textarea{
     height: 100px;
@@ -176,8 +175,8 @@ input[type="radio"], input[type="checkbox"] {
 button {
     padding: 10px;
     margin: 10px;
-    background-color: burlywood;
-    color: #000;
+    background-color: var(--color-accent);
+    /* color: #000; */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -186,15 +185,15 @@ button {
 }
 
 button:hover {
-    background-color: #000;
-    color: burlywood;
+    background-color: var(--color-background);
+    color: var(--color-accent);
 }
 
 
 
 /* For aside */
 aside{
-    background-color: #222;
+    background-color: var(--color-secondary);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -210,6 +209,6 @@ aside ul li{
 /* For Footer */
 footer{
     text-align: center;
-    background-color: aliceblue;
-    color: black;
+    background-color: var(--color-header-footer);
+    color: var(--color-background);
 }
