@@ -14,6 +14,8 @@ html, body{
     height: 100%;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -225,4 +227,18 @@ footer{
     text-align: center;
     background-color: var(--color-header-footer);
     color: var(--color-background);
+}
+
+/*For responsive */
+/*For mobile devices */
+@media (max-width: 600px){
+
+}
+/*For tablets */
+@media (min-width: 601px) and (max-width: 768px){
+
+}
+/*For desktops */
+@media (min-width: 769px) {
+    
 }
