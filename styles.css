@@ -232,13 +232,19 @@ footer{
 /*For responsive */
 /*For mobile devices */
 @media (max-width: 600px){
-
+  body{
+    background-color: aqua;
+  }
 }
 /*For tablets */
 @media (min-width: 601px) and (max-width: 768px){
-
+    body{
+        background-color: blue;
+    }
 }
 /*For desktops */
 @media (min-width: 769px) {
-    
+    body{
+        background-color: burlywood;
+    }
 }
